@@ -57,7 +57,7 @@ abstract class MangaDex(final override val lang: String, private val dexLang: St
 
     final override fun headersBuilder() = Headers.Builder()
         .add("Referer", "$baseUrl/")
-        .add("User-Agent", "Tachiyomi " + System.getProperty("http.agent"))
+        .add("User-Agent", "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.5195.79 Mobile Safari/537.36")
 
     override val client = network.client.newBuilder()
         .rateLimit(3)
